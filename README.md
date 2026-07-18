@@ -33,5 +33,16 @@ pip install -r requirements.txt
 python -m streamlit run app.py
 ```
 
+## Screenshots
+
+### Dashboard
+![Dashboard](dashboard.jpg)
+
+### Dashboard (Analysis)
+![Dashboard 2](dashboard2.jpg)
+
+### Feedback Form
+![Feedback Form](feedback_form.jpg)
+
 ## Author
 Karim Reda
