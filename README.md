@@ -3,23 +3,24 @@
 A web-based restaurant feedback system that enables customers to submit feedback while providing an interactive dashboard for feedback analysis.
 
 ## Features
-- Customer feedback submission
+- Customer feedback submission with input validation (Egyptian mobile numbers)
+- Search a customer's feedback by phone number
+- Edit or delete a single feedback record (with delete confirmation)
 - Interactive analytics dashboard
-- Data stored in an Excel database
-- Data visualization and reporting
+- Export all feedback to Excel
+- Data stored in an Excel file (`feedback.xlsx`, created automatically on first run)
 
 ## Technologies Used
 - Python
 - Streamlit
 - Pandas
 - Plotly
-- Datetime
-- OS
+- OpenPyXL
 
 ## Project Structure
-- app.py
-- database.py
-- dashboard.py
+- `app.py` – main page: feedback form, search, edit, delete and export
+- `database.py` – reading, writing and validating data in the Excel file
+- `dashboard.py` – KPIs and charts
 
 ## How to Run
 

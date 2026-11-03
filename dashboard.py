@@ -1,7 +1,5 @@
 # استيراد مكتبة Streamlit لإنشاء واجهة التطبيق
 import streamlit as st
-# استيراد Pandas للتعامل مع البيانات والجداول
-import pandas as pd
 # استيراد Plotly Express لرسم الرسوم البيانية
 import plotly.express as px
 
@@ -9,7 +7,6 @@ import plotly.express as px
 from database import load_feedback
 
 
-   
 # =====================================
 # Dashboard
 # =====================================
@@ -67,7 +64,7 @@ def show_dashboard():
     )
 
     c4.metric(
-        "Excellent",
+        "Excellent Cleanliness",
         excellent_clean,
     )
 
@@ -101,7 +98,7 @@ def show_dashboard():
 
         st.plotly_chart(
             meal_chart,
-            use_container_width=True,
+            width="stretch",
         )
 
     # ------------------------------
@@ -127,11 +124,11 @@ def show_dashboard():
 
             rating_chart,
 
-            use_container_width=True,
+            width="stretch",
 
         )
 
-# ==============================
+    # ==============================
     # Cleanliness Pie Chart
     # ==============================
 
@@ -171,7 +168,7 @@ def show_dashboard():
 
             clean_chart,
 
-            use_container_width=True,
+            width="stretch",
 
         )
 
@@ -217,7 +214,7 @@ def show_dashboard():
 
             wait_chart,
 
-            use_container_width=True,
+            width="stretch",
 
         )
 
@@ -235,6 +232,8 @@ def show_dashboard():
         .size()
 
         .reset_index(name="Feedback")
+
+        .sort_values("Date")
 
     )
 
@@ -257,7 +256,7 @@ def show_dashboard():
 
         line_chart,
 
-        use_container_width=True,
+        width="stretch",
 
     )
 
@@ -274,7 +273,7 @@ def show_dashboard():
 
         df,
 
-        use_container_width=True,
+        width="stretch",
 
         hide_index=True,
 
