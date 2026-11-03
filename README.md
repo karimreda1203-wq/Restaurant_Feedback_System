@@ -46,14 +46,25 @@ python -m streamlit run app.py
 
 ## Screenshots
 
+### Customer Feedback Form
+Customers only see this form.
+![Customer Feedback Form](feedback_form.jpg)
+
+### Admin Login
+The restaurant area is protected by a password.
+![Admin Login](admin_login.jpg)
+
 ### Dashboard
 ![Dashboard](dashboard.jpg)
 
-### Dashboard (Analysis)
+### Dashboard (Feedback Over Time & All Records)
 ![Dashboard 2](dashboard2.jpg)
 
-### Feedback Form
-![Feedback Form](feedback_form.jpg)
+### Manage Feedback
+![Manage Feedback](manage_feedback.jpg)
+
+### Search & Edit a Record
+![Edit Feedback](edit_feedback.jpg)
 
 ## Author
 Karim Reda
